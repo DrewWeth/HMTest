@@ -1,0 +1,214 @@
+<head>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <script src="parallax.js"></script>
+  <script src="fixateNavbar.js"></script>
+
+
+</head>
+<style>
+
+
+  html{
+
+    margin:0px;
+  }
+
+  .nav-logo{
+    width:120px;
+    max-width: 80%;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+
+    z-index: 1001;
+  }
+
+
+  body{
+    margin: 0px;
+    /*background-color: #031421;*/
+
+
+    /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(bottom left, #EAC56B 0%, #FFE199 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom left, #EAC56B 0%, #FFE199 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(bottom left, #EAC56B 0%, #FFE199 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #EAC56B), color-stop(1, #FFE199));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom left, #EAC56B 0%, #FFE199 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to top right, #EAC56B 0%, #FFE199 100%);
+  }
+
+  nav{
+    background-color: #031421;
+
+  }
+
+  .nav{
+    position: relative;
+    z-index: 1000;
+    margin-top: -10px;
+    background-color: #031421;
+  }
+
+  .center{
+    text-align: center;
+  }
+
+  h1#logo{
+    color:transparent;
+    text-align:center;
+    background-image: url('public/pics/logo.png');
+    background-position: center top;
+    position: fixed;
+    background-repeat: no-repeat;
+    height: 344px;
+    width: 100%;
+    top: 100px;
+    z-index: 5;
+  }
+
+  .parallax-wrapper{
+    position:relative;
+    height:800px;
+  }
+
+  .parallax-layer{
+    height:800px;
+    width:100%;
+    background-position: bottom center;
+    position: fixed;
+    top:0;
+    left:0;
+  }
+
+  .layer-1{
+    z-index: 1;
+    background-image: url('public/pics/layer-1.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+  }
+  .layer-2{
+    z-index: 2;
+    background-image: url('public/pics/layer-2.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+  }
+  .layer-3{
+    z-index: 3;
+    background-image: url('public/pics/layer-3.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+  }
+  .layer-4{
+    z-index: 4;
+    background-image: url('public/pics/layer-4.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+  }
+  .layer-5{
+    z-index: 5;
+    background-image: url('public/pics/layer-5.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+  }
+  .layer-6{
+    z-index: 6;
+    background-image: url('public/pics/layer-6.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+  }
+
+  #content{
+    position: relative;
+    background: #031421;
+    margin-top: -20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 5;
+    color:#eee;
+  }
+
+</style>
+
+<h1 id="logo">HackMizzou</h1>
+
+<div class="parallax-wrapper">
+
+<body style="height:1000px">
+<div class="parallax-layer layer-1" id="layer-1"></div>
+<div class="parallax-layer layer-2" id="layer-2"></div>
+<div class="parallax-layer layer-3" id="layer-3"></div>
+<div class="parallax-layer layer-4" id="layer-4"></div>
+<div class="parallax-layer layer-5" id="layer-5"></div>
+<div class="parallax-layer layer-6" id="layer-6"></div>
+</div>
+
+
+<div id="nav-div" class="nav">
+  <nav id="navbar">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><img class="nav-logo" src="public/pics/logo.png"</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="components.html">Components</a></li>
+        <li><a href="javascript.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="components.html">Components</a></li>
+        <li><a href="javascript.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div id="content">
+  <div class="container">
+    <h1 class="center">Get Involved</h1>
+    <p>
+      How to get involved?
+    </p>
+
+  <h1 class="center">Sponsors</h1>
+  <p>
+    How to be a sponsor?
+  </p>
+  <h1 class="center">Schedule</h1>
+  <h1 class="center">FAQ</h1>
+  <h1 class="center">Prizes</h1>
+  <h1 class="center">Footer</h1>
+  </div>
+</div>
+
+</body>
